@@ -1,0 +1,24 @@
+* {
+    margin: 10;
+  }
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section_nav_navbar{
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.section_nav_navbar li{
+    position: relative;
+    display: block;
+}
+
+.section_nav_navbar  li  a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+  }
