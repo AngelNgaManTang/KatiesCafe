@@ -25,6 +25,7 @@
     margin: 0;
   }
 .logo {
+    width: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,15 +39,16 @@
     text-align: center;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    
 }
 .section_nav_navbar{
-
     list-style: none;
     margin: 0;
     padding: 0;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    margin-bottom:1em;
     
 }
 .section_nav_navbar li{
@@ -87,5 +89,19 @@
     transition: all .5;
 }
 
+.section_cafe_about_us_title{
+    padding: 1em;
+    text-align: center;
+    font-size: var(--fs-h1);
+    font-family: var(--ff-secondary);
+}
 
-  
+.section_cafe_about_us_paragraphs{
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    padding: 2em;
+    font-size: var(--fs-body);
+}
+
+
