@@ -8,7 +8,7 @@
 
     --clr-light: #fff;
     --clr-dark: #593C1F;
-    --clr-accent: #FBAA04;
+    --clr-nav: #f54a16;
     --clr-hamburger: #1404FB;
 
     --fs-h1: 3.5rem;
@@ -25,10 +25,28 @@
     margin: 0;
   }
 .logo {
-    width: 20%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width: 900px){
+    .logo {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px){
+    .logo {
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .section_nav{
@@ -39,7 +57,10 @@
     text-align: center;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    
+
+}
+.nav{
+    color: var(--clr-nav);
 }
 .section_nav_navbar{
     list-style: none;
@@ -49,6 +70,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom:1em;
+    color: var(--clr-nav);
     
 }
 .section_nav_navbar li{
@@ -97,17 +119,19 @@
 
 .section_cafe_about_us_paragraphs{
     text-align: center;
-    max-width: 1200px;
-    position: relative;
-    padding: 1em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-top: 2.5em;
     font-size: var(--fs-body);
     font-family: var(--ff-tertiary);
+    
 }
 .social_list{
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 0.5em 0;
+    margin-top: 2.5em;
     padding: 0;
     font-size: var(--fs-h3);
     color: var(--clr-dark);
@@ -125,4 +149,5 @@
     text-align: center;
     font-family: var(--ff-secondary);
     font-size: var(--fs-h5);
+    margin-bottom: 1em;
 }
