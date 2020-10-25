@@ -61,7 +61,7 @@
 }
 
 .section_nav{
-    position:fixed;
+
     background-color: var( --clr-light);
     width: 100%;
     top: 0;
@@ -96,11 +96,12 @@
 
 .section_cafe_images_title{
     padding: 40px;
-    margin-top: 270px;
+    margin-top: 20px;
     text-align: center;
     font-size: var(--fs-h1);
     font-family: var(--ff-secondary);
 }
+
 
 .wrapper {
     position: relative;
@@ -142,6 +143,87 @@
     font-family: var(--ff-tertiary);
     
 }
+
+.section_our_menu_title{
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: var(--fs-h1);
+    font-family: var(--ff-secondary);
+}
+.section_our_menu_breakfast, .section_our_menu_lunch, .section_our_menu_dinner{
+    
+    display: grid;
+    padding: 1em;
+    justify-items: center;
+    
+}
+
+   
+.section_our_menu_breakfast_title, .section_our_menu_lunch_title, .section_our_menu_dinner_title{
+    padding: 40px;
+    text-align: center;
+    font-size: var(--fs-h4);
+    font-family: var(--ff-tertiary);
+}
+
+.image {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .image_container {
+    position: relative;
+    width: 100%;
+}
+.image_overlay {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--clr-dark);
+  }
+  
+  .image_container:hover .image_overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: var(--fs-h3);
+    position: absolute;
+    font-family: var(--ff-secondary);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+@media (min-width: 1000px){
+    .section_our_menu_breakfast, .section_our_menu_lunch, .section_our_menu_dinner{
+        padding: 1em;
+        justify-content: center;
+        display: flex;
+    }
+    .section_our_menu_breakfast_title, .section_our_menu_lunch_title, .section_our_menu_dinner_title{
+        padding: 40px;
+        text-align: center;
+        font-size: var(--fs-h4);
+        font-family: var(--ff-tertiary);
+    }
+    .section_our_menu_breakfast_image, .section_our_menu_lunch_image, .section_our_menu_dinner_image{
+        width: 50%;
+    }
+}
+
 .social_list{
     list-style: none;
     display: flex;
