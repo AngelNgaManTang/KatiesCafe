@@ -144,7 +144,7 @@
     
 }
 
-.section_our_menu_title{
+.section_our_menu_title, .section_our_menu_drinks_title{
     padding: 40px;
     margin-top: 20px;
     text-align: center;
@@ -222,6 +222,60 @@
     .section_our_menu_breakfast_image, .section_our_menu_lunch_image, .section_our_menu_dinner_image{
         width: 50%;
     }
+}
+
+.section_our_menu_cold_drinks, .section_our_menu_hot_drinks, .section_our_menu_drinks_item{
+    justify-content: center;
+    display: block;
+    text-align: center;
+    font-family: var(--ff-tertiary);
+    
+}
+ .section_our_menu_drinks_table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+ }
+
+.section_our_menu_hot_drinks_title, .section_our_menu_cold_drinks_title{
+    text-align: center;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-primary);
+    padding: 1em;
+}
+.section_our_menu_drinks_item{
+    font-size: var(--fs-h4);
+    font-family: var(--ff-secondary);
+    
+}
+.section_contact_title{
+    text-align: center;
+    font-size: var(--fs-h1);
+    font-family: var(--ff-primary);
+}
+.section_contact_address{
+    text-align: center;
+    font-size: var(--fs-h4);
+    font-family: var(--ff-secondary);
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:600px;
+    width:600px;
+    padding: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+    display: flex;
+    justify-content: center;
 }
 
 .social_list{
