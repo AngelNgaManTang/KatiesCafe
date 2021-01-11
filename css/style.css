@@ -23,6 +23,7 @@
 }
 * {
     margin: 0;
+    overflow-x: hidden;
   }
 .logo {
     width: 30%;
